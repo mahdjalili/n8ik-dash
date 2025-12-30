@@ -1,0 +1,17 @@
+[
+    {
+        "name": "auction",
+        "clients": [
+            {
+                "environment": "production",
+                "openapi": "https://n8ik.uln.me/api/n8ik/v1/openapi.json",
+                "basePath": ""
+            },
+            {
+                "environment": "development",
+                "openapi": "https://n8ik.uln.me/api/n8ik/v1/openapi.json",
+                "basePath": "https://n8ik.uln.me"
+            }
+        ]
+    }
+]
