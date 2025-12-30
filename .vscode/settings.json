@@ -1,3 +1,9 @@
 {
-  "tailwindCSS.experimental.configFile": "packages/ui/src/styles/globals.css"
+  "tailwindCSS.experimental.configFile": "packages/ui/src/styles/globals.css",
+  "workbench.colorCustomizations": {
+    "terminal.background": "#00000000",
+    "activityBar.background": "#2C2F26",
+    "titleBar.activeBackground": "#3E4136",
+    "titleBar.activeForeground": "#FAFAF9"
+  }
 }
