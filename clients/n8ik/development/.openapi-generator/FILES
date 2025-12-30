@@ -1,0 +1,17 @@
+.gitignore
+.npmignore
+api.ts
+base.ts
+common.ts
+configuration.ts
+docs/DefaultApi.md
+docs/DeploymentCreateSchema.md
+docs/DeploymentSchema.md
+docs/DeploymentsApi.md
+docs/HTTPValidationError.md
+docs/LocationInner.md
+docs/N8ndeploymentSchema.md
+docs/PaginatedResponseDeploymentSchema.md
+docs/ValidationError.md
+git_push.sh
+index.ts
