@@ -1,0 +1,30 @@
+services:
+    ice-dev:
+        build:
+            context: .
+            dockerfile: Dockerfile.dev
+        volumes:
+            - .:/app
+        environment:
+            - APP_NAME=monorepo
+            - NEXT_PUBLIC_API_GATEWAY_URL=https://n8ik.uln.me
+            - NODE_ENV=development
+        stdin_open: true
+        tty: true
+        networks:
+            - traefik-net
+        labels:
+            - "traefik.enable=true"
+
+            - "traefik.http.routers.n8ik-dev.rule=Host(`n8ik-dev.uln.me`)"
+            - "traefik.http.routers.n8ik-dev.entrypoints=websecure"
+            - "traefik.http.routers.n8ik-dev.tls=true"
+            - "traefik.http.services.n8ik-dev.loadbalancer.server.port=3000"
+            - "traefik.http.routers.n8ik-dev.service=n8ik-dev"
+
+networks:
+    traefik-net:
+        external: true
+
+volumes:
+    node_modules:
