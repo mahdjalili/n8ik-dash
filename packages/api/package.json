@@ -1,0 +1,40 @@
+{
+    "name": "@ice/api",
+    "type": "module",
+    "version": "0.0.1",
+    "private": true,
+    "exports": {
+        ".": "./dist/src/index.js",
+        "./sso": "./dist/src/sso.js",
+        "./wallet": "./dist/src/wallet.js",
+        "./exchange": "./dist/src/exchange.js",
+        "./collection": "./dist/src/collection.js",
+        "./auction": "./dist/src/auction.js",
+        "./smpq": "./dist/src/smpq.js",
+        "./cds": "./dist/src/cds.js",
+        "./media": "./dist/src/media.js",
+        "./ipg": "./dist/src/ipg.js"
+    },
+    "scripts": {
+        "dev": "swc src -d dist --watch",
+        "build": "swc src -d dist",
+        "clean": "rm -rf dist .turbo node_modules"
+    },
+    "dependencies": {
+        "@ice/usso": "workspace:*",
+        "@ice/wallet": "workspace:*",
+        "@ice/exchange": "workspace:*",
+        "@ice/config": "workspace:*",
+        "@ice/collection": "workspace:*",
+        "@ice/auction": "workspace:*",
+        "@ice/smpq": "workspace:*",
+        "@ice/media": "workspace:*",
+        "@ice/ipg": "workspace:*",
+        "@ice/cds": "workspace:*",
+        "axios": "catalog:api"
+    },
+    "devDependencies": {
+        "@swc/cli": "catalog:build",
+        "@swc/core": "catalog:build"
+    }
+}

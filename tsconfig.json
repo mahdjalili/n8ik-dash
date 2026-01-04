@@ -1,4 +1,10 @@
 {
-  "extends": "@workspace/typescript-config/base.json"
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@ice/api": ["./packages/api/src"],
+            "@ice/api/*": ["./packages/api/src/*"]
+        }
+    },
+    "extends": "@workspace/typescript-config/base.json"
 }
-
