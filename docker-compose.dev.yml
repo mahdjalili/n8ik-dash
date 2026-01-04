@@ -19,7 +19,7 @@ services:
             - "traefik.http.routers.n8ik-dev.rule=Host(`n8ik-dev.uln.me`)"
             - "traefik.http.routers.n8ik-dev.entrypoints=websecure"
             - "traefik.http.routers.n8ik-dev.tls=true"
-            - "traefik.http.services.n8ik-dev.loadbalancer.server.port=3000"
+            - "traefik.http.services.n8ik-dev.loadbalancer.server.port=3020"
             - "traefik.http.routers.n8ik-dev.service=n8ik-dev"
 
 networks:
