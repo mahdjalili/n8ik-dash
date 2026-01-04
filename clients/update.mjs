@@ -3,11 +3,11 @@ import { writeFile, readFile } from "fs/promises";
 import path from "node:path";
 import { $ } from "bun";
 
-const SCOPE = "@ice";
+const SCOPE = "@workspace";
 const VERSION = "0.0.1";
 
 // Get API Gateway URL from environment variable
-const API_GATEWAY_URL = process.env.NEXT_PUBLIC_API_GATEWAY_URL || "https://app.uln.me";
+const API_GATEWAY_URL = process.env.NEXT_PUBLIC_API_GATEWAY_URL || "https://n8ik.uln.me";
 
 console.log(`🚀 Using API Gateway URL: ${API_GATEWAY_URL}`);
 

@@ -21,16 +21,7 @@
         "clean": "rm -rf dist .turbo node_modules"
     },
     "dependencies": {
-        "@ice/usso": "workspace:*",
-        "@ice/wallet": "workspace:*",
-        "@ice/exchange": "workspace:*",
-        "@ice/config": "workspace:*",
-        "@ice/collection": "workspace:*",
-        "@ice/auction": "workspace:*",
-        "@ice/smpq": "workspace:*",
-        "@ice/media": "workspace:*",
-        "@ice/ipg": "workspace:*",
-        "@ice/cds": "workspace:*",
+        "@workspace/n8ik": "workspace:*",
         "axios": "catalog:api"
     },
     "devDependencies": {

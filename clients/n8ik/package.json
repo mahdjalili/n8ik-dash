@@ -1,15 +1,15 @@
 {
-  "name": "@ice/n8ik",
-  "version": "0.0.1",
-  "private": true,
-  "type": "module",
-  "main": "index.ts",
-  "exports": {
-    ".": "./production/index.ts",
-    "./development": "./development/index.ts",
-    "./production": "./production/index.ts"
-  },
-  "dependencies": {
-    "axios": "catalog:api"
-  }
+    "name": "@workspace/n8ik",
+    "version": "0.0.1",
+    "private": true,
+    "type": "module",
+    "main": "index.ts",
+    "exports": {
+        ".": "./production/index.ts",
+        "./development": "./development/index.ts",
+        "./production": "./production/index.ts"
+    },
+    "dependencies": {
+        "axios": "catalog:api"
+    }
 }
